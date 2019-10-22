@@ -8,21 +8,28 @@
        <p class="mt-2">About Derrick</p>
        <p>Home</p>
        <p>Projects</p>
+       <p>Community</p>
       </v-col>
       <v-col xs12 sm12 md2 align="center">
         <p>SOCIAL CONNECT</p>
         <v-divider></v-divider>
         <v-btn class="mt-5 mr-5" outlined fab color="teal">
+        <a href="https://en-gb.facebook.com/bundi.derrick" class="link" target="blank">
         <v-icon>mdi-facebook</v-icon>
+        </a>
         </v-btn>
         <v-btn class="mt-5 mr-5" outlined fab color="teal">
+        <a href="https://twitter.com/derrickbundi01" class="link" target="blank">
         <v-icon>mdi-twitter</v-icon>
+        </a>
         </v-btn>
         <v-btn class="mt-5" outlined fab color="teal">
+        <a href="https://wa.me/254725212418" class="link" target="blank">
         <v-icon>mdi-whatsapp</v-icon>
+        </a>
         </v-btn>
       </v-col>
-      <v-col xs12 sm12 md6 clas="contact">
+      <v-col xs12 sm12 md6 class="contact">
         <p align="center">TALK TO DERRICK</p>
         <v-divider></v-divider>
         <v-form v-model="contact">
@@ -86,7 +93,8 @@
     <v-divider></v-divider>
     <v-row>
       <v-col align="center">
-        <!-- <?php date(); ?> -->
+       <v-icon>mdi-copyright</v-icon> . 2019 |
+       All Rights Reserved. Kenya
       </v-col>
     </v-row>
   </div>
@@ -108,6 +116,6 @@ export default {
   margin: 10px 30px 0px 30px;
 }
 .contact {
-  border: solid 1px orange;
+  border: solid 1px teal;
 }
 </style>

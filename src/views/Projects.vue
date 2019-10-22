@@ -27,7 +27,7 @@
               <div class="text-justify">{{project.content}}</div>
               <v-divider></v-divider>
               <v-row>
-                <v-btn color="teal" text>Explore</v-btn>
+                <v-btn color="teal" text><a :href="project.link" target="blank" class="link">Explore</a></v-btn>
                 <v-spacer></v-spacer>
                 <v-btn text color="teal"><v-icon>{{project.icon}}</v-icon></v-btn>
               </v-row>
@@ -55,7 +55,7 @@ export default {
           service providers upload their services i.e matatu they have on their routes,\
           travellers can book online to their services.",
         icon: "mdi-gitlab",
-        link: ""
+        link: "https://texpress.herokuapp.com"
       },
       {
         title: "Meru Eagles Limited | Laravel",
@@ -67,7 +67,7 @@ export default {
           customers can make order, buy breads, see investors meeting notification and look to products\
           they are offering as they compare prices",
         icon: "mdi-github-circle",
-        link: ""
+        link: "https://merueagles.herokuapp.com"
       },
       {
         title: "Get Jobs in Kenya | Laravel",
@@ -80,7 +80,7 @@ export default {
           posting jobs by admin and merchants where they could upload their services such as selling\
           shoes in the website",
         icon: "mdi-gitlab",
-        link: ""
+        // link: ""
       },
       {
         title: "Portifolio | Vue Js and Node JS",
@@ -91,7 +91,7 @@ export default {
           "This is my portifolio I designed using Vue Js as the frontend with material desing i.e Vuetify\
           because of it rich in user interface experiences.",
         icon: "mdi-github-circle",
-        link: ""
+        link: "https://tprofile.herokuapp.com"
       }
     ]
   }),
@@ -106,4 +106,7 @@ export default {
 </script>
 
 <style scoped>
+.link {
+  text-decoration: none;
+}
 </style>

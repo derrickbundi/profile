@@ -36,7 +36,10 @@
         </template>
         <v-list>
           <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
-            <v-list-item-title>{{ link.text }}</v-list-item-title>
+            <v-list-item-title>
+              <v-icon>{{ link.icon }}</v-icon>
+              {{ link.text }}
+              </v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -74,6 +77,11 @@ export default {
     links: [
       { icon: "mdi-view-dashboard-outline", text: "Dashboard", route: "/" },
       { icon: "mdi-folder", text: "My Projects", route: "/projects" },
+      {
+        icon: "mdi-account-group",
+        text: "Community",
+        // route: ""
+      }
     ],
     directContact: false,
   })
