@@ -1,29 +1,24 @@
-# profile
-
+# Vue JS + Vuetify Portifolio Application
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Author
 
-### Run your tests
-```
-npm run test
-```
+* **Derrick Bundi**
 
-### Lints and fixes files
-```
-npm run lint
-```
+[derrick.bundi27@gmail.com]
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Technologies
+Project is created with:
+* Vue JS
+* Vuetify
+* Express
+
+
