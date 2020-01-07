@@ -248,6 +248,7 @@ export default {
           // text: 'Message Sent to Derrick Successfully',
           footer: 'Here from me soon...'
         })
+        // eslint-disable-next-line no-console
         console.log(response)
       })
       .catch(response => {
