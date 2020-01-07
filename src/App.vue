@@ -3,7 +3,7 @@
     <Navbar />
     <v-content class="body">
       <div class="container">
-        <router-view></router-view>
+        <router-view />
       </div>
     </v-content>
     <Footer />

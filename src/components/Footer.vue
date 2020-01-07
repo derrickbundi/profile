@@ -183,10 +183,10 @@
               class="text-right"
             >
               <v-btn
+                v-show="contact.firstname && contact.lastname && contact.email && contact.body"
                 tile
                 color="teal"
                 @click="formSubmit"
-                v-show="contact.firstname && contact.lastname && contact.email && contact.body"
               >
                 Send Message
               </v-btn>
@@ -238,7 +238,7 @@ export default {
   }),
   methods: {
     formSubmit() {
-      axios.post("http://127.0.0.1:8000/api/profile/contact", this.contact)
+      axios.post("http://serverap.herokuapp.com/api/profile/contact", this.contact)
       .then(response => {
         Swal.fire({
           icon: 'success',
