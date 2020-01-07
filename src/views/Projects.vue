@@ -2,38 +2,91 @@
   <div class="projects">
     <!-- Row Projects -->
     <!-- Header -->
-    <div align="center">My Projects...</div>
+    <!-- <div> -->
+    <h4>
+      <v-row>
+        <v-col>
+          <b style="border-bottom: 4px solid indigo;display: inline-block;">
+            Projects...
+          </b>
+        </v-col>
+        <v-spacer />
+        <v-col class="text-right">
+          <!-- <b> -->
+          <v-chip
+            outlined
+            class="mr-1"
+          >
+            All
+          </v-chip>
+          <v-chip
+            outlined
+            class="mr-1"
+          >
+            Ongoing
+          </v-chip>
+          <v-chip outlined>
+            Finished
+          </v-chip>
+          <!-- </b> -->
+        </v-col>
+      </v-row>
+    </h4>
+    <!-- </div> -->
     <!-- End -->
     <v-row>
       <v-col>
-        <v-expansion-panels v-for="project in projects" :key="project.title" router :to="project.link">
+        <v-expansion-panels
+          v-for="project in projects"
+          :key="project.title"
+          router
+          :to="project.link"
+        >
           <v-expansion-panel class="mt-2">
             <v-expansion-panel-header>
               <v-flex>
-                {{project.title}}
+                {{ project.title }}
               </v-flex>
-              <v-spacer></v-spacer>
+              <v-spacer />
               <v-flex>
                 <div class="text-right">
                   <v-chip outlined>
-                <v-icon>mdi-account</v-icon>
-                Status: Ongoing
-              </v-chip>
+                    <v-icon>mdi-account</v-icon>
+                    Status: Ongoing
+                  </v-chip>
                 </div>
               </v-flex>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-              <div class="font-weight-bold">Start date: {{project.start}}</div>
-              <div class="text-justify">{{project.content}}</div>
-              <v-divider></v-divider>
+              <div class="font-weight-bold">
+                Start date: {{ project.start }}
+              </div>
+              <div class="text-justify">
+                {{ project.content }}
+              </div>
+              <v-divider />
               <v-row>
-                <v-btn color="teal" text><a :href="project.link" target="blank" class="link">Explore</a></v-btn>
-                <v-spacer></v-spacer>
-                <v-btn text color="teal"><v-icon>{{project.icon}}</v-icon></v-btn>
+                <v-btn
+                  color="teal"
+                  text
+                >
+                  <a
+                    :href="project.link"
+                    target="blank"
+                    class="link"
+                  >Explore</a>
+                </v-btn>
+                <v-spacer />
+                <v-btn
+                  text
+                  color="teal"
+                >
+                  <v-icon>{{ project.icon }}</v-icon>
+                </v-btn>
               </v-row>
             </v-expansion-panel-content>
           </v-expansion-panel>
-          <v-divider></v-divider>
+          <v-divider />
         </v-expansion-panels>
       </v-col>
     </v-row>
